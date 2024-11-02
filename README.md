@@ -104,7 +104,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-Created by [Your Name](https://github.com/yourusername) - Feel free to connect with me!
+Created by [Maziyar kolagar](https://github.com/Thrymheim/MyBlog) - Feel free to connect with me [maziyarkolagar@gmail.com]
 ```
 
 ### Tips
