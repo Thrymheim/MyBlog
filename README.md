@@ -1,4 +1,4 @@
-```markdown
+
 # My Personal Blog
 
 Welcome to my personal blog! This project is built using **Django** for the backend and **HTML/CSS** for the frontend. It serves as a platform for sharing my thoughts, ideas, and experiences.
@@ -14,9 +14,6 @@ Welcome to my personal blog! This project is built using **Django** for the back
 
 ## Features
 
-- User authentication (registration, login, logout)
-- Create, read, update, and delete blog posts
-- Comment section for each post
 - Responsive design for mobile and desktop
 - Simple and clean user interface
 
@@ -84,8 +81,7 @@ To get your own copy of this project up and running, follow these steps:
 
 - Visit the home page to view the latest blog posts.
 - Click on a post title to read the full content.
-- Register for an account to create new blog posts and leave comments.
-- Use the admin panel to manage your blog content.
+- And more to come!
 
 ## Contributing
 
@@ -105,12 +101,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Author
 
 Created by [Maziyar kolagar](https://github.com/Thrymheim/MyBlog) - Feel free to connect with me [maziyarkolagar@gmail.com]
-```
-
-### Tips
-1. Replace `yourusername` and `your-repo-name` with your actual GitHub username and repository name.
-2. Update any relevant features, installation instructions, and information specific to your project.
-3. Make sure to include a `requirements.txt` file in your repository with all required python packages for your Django project.
-4. Add a license file if you haven't done so already. Lizenzent  can be found on various platforms according to your preferences.
-
-Feel free to edit any sections to better fit your project or personal style!
