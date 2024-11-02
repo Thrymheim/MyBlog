@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+    <link rel="icon" type="image.png" href="{{ post.favicon }}">
+{% endblock %}
+
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post title</h2>
+        <article>
+            <img src="{% static 'blog/images/'|add:post.image %}" alt="post image">
+            <address>By {{ post.author }}</address>
+            <div>
+                last updated on
+                <time>{{ post.date }}</time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>
+            {{ post.content|linebreaks }} {#linebreaks means if u use enter it gets in the html#}
+        </p>
+    </main>
+{% endblock %}

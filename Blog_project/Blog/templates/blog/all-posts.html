@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
+    <link rel="icon" type="image.png" href="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png">
+{% endblock %}
+
+{% block content %}
+    <section id="all-posts">
+        <h2>These are all the posts</h2>
+        <ul>
+            {% for post in all_posts %}
+                {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

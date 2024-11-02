@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="icon" type="image.png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpr3qaYsMdtNT1AURU2TG5ibZsaA49KFir0tFLjcLE-fe_jynBicjAM-FKUl2wazthBU&usqp=CAU">
+{% endblock %}
+
+
+{% block title %}
+    My Blog
+{% endblock %}
+
+{% block content %}
+
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/Me.jpg' %}" alt="Maziyar - author of this blog">
+            <h2>My website project</h2>
+        </header>
+        <p>Hi my name is Maziyar and im a Back-End developer</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>Latest Posts</h2>
+        <ul>
+            {% for post in latest_posts%}
+                <p>{{ post.title }}</p>
+                {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid dicta, eius eos eum eveniet
+            perspiciatis quod soluta veritatis? Alias atque ducimus facere odit pariatur! Alias, aspernatur consequuntur
+            deleniti est fugit officiis porro quia saepe tenetur, veniam veritatis voluptatem voluptatum?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad adipisci architecto atque autem
+            corporis deleniti deserunt enim eum fugiat hic laborum nam, natus nisi officia optio porro praesentium
+            provident qui quia repellat repellendus repudiandae saepe similique sit tenetur unde voluptatem. Distinctio
+            doloremque excepturi fugit harum iste quam sequi veritatis. Aliquam est labore laboriosam magnam maxime quos
+            unde voluptate voluptatem!
+        </p>
+    </section>
+
+{% endblock %}
